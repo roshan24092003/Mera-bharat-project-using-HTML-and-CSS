@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(08c12fd66d595459e446d76a3a561dd4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+nav{
+    width: 100%;
+    height: 7%;
+    background: black;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    
+}
+nav .logo{
+    width: 25%;
+    text-align: center;
+    animation: 0.1s;
+}
+nav .menu {
+    width: 40%;
+    margin-left: 40%;
+   
+    justify-content: space-between;
+    
+  
+}
+nav .menu a{
+
+    
+    padding: 15px;
+    color: rgb(59, 255, 245);
+    text-decoration: none;
+    transition: 0.5s;
+}
+nav .menu a:hover{
+    text-decoration: underline;
+    
+}
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+section h3{
+    font: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    color: aliceblue;
+    text-shadow: 3px 4px 5px black;
+    transition: 0.3s;
+}
+section h1{
+    color: aliceblue;
+    font-size: 40px;
+    text-shadow: 2px 2px 5px black;
+    letter-spacing: 3px;
+    transition: 0.2s;
+}
+section p{
+    color: aliceblue;
+    
+    word-spacing: 2px;
+    text-shadow: 2px 2px 5px black;
+    letter-spacing: 3px;
+    transition: 0.4s;
+}
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+section .bt1{
+    background: wheat;
+    color: black;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+section .bt1:hover{
+background-color: green;
+color: aliceblue;
+}
+section .bt2{
+    background: #00b894;
+    color: aliceblue;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+section .bt2:hover{
+    background-color: orangered;
+    color: rgb(255, 255, 255);
+}
+section h1:hover{
+    color: rgb(255, 255, 255);
+}
+section p:hover{
+    font-size: larger;
+    font-style: italic;
+    color: rgb(2, 255, 2);
+}
+section h3:hover{
+    color: orangered;
+    font-size: 30px;
+}
+.change:after{
+    content: "";
+    animation: changetext 5s infinite linear;
+}
+@keyframes changetext{
+    0%{content: "Darjeeling";}
+    20%{content: "Mayapur";}
+    30%{content: "Kaashi";}
+    40%{content: "Vaishno devi";}
+    50%{content: "Mathura";}
+    60%{content: "Vrindavan";}
+}
